@@ -343,4 +343,13 @@ function PremiumGUI:AddButton(name, callback)
     
     return button
 end
-ndndd
+
+-- Пример использования:
+local GUI = PremiumGUI.new()
+GUI:AddButton("Тестовая кнопка", function()
+    print("Кнопка нажата!")
+end)
+
+GUI:AddButton("Вторая кнопка", function()
+    print("Вторая кнопка сработала")
+end)
